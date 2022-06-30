@@ -43,7 +43,7 @@ mat-sidenav-container {
     display: flex;
     margin: auto;
     width: 250px;
-    height: 80px;
+    height: 100px;
     align-items: center;
 }
 
@@ -93,6 +93,7 @@ mat-sidenav-container {
    It needs to always fit.*/
 .os-logo-container {
     margin: auto;
+    margin-top: 20px;
     width: 230px !important;
     margin-left: 10px;
     max-height: 80px;

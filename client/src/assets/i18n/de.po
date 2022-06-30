@@ -3378,8 +3378,8 @@ msgstr ""
 msgid "Web interface header logo"
 msgstr "Web-Interface-Kopfzeilen-Logo"
 
-msgid "Welcome to OpenSlides"
-msgstr "Willkommen bei OpenSlides"
+msgid "Welcome to Ratquadrat"
+msgstr "Willkommen bei Ratquadrat"
 
 msgid "Which version?"
 msgstr "Welche Fassung?"

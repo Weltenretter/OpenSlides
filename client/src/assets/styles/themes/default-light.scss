@@ -1,11 +1,15 @@
 @use '~@angular/material' as mat;
-@import '~assets/styles/color-palettes/os-blue';
+@import '.~assets/styles/color-palettes/os-blue';
+@import '.~assets/styles/color-palettes/wr-erden-blau';
+@import '.~assets/styles/color-palettes/wr-universums-schwarz';
+@import '.~assets/styles/color-palettes/wr-venus-gelb';
+@import '.~assets/styles/color-palettes/wr-mars-rot';
 
 // Generate paletes using: https://material.io/design/color/
 // default values for mat-palette: $default: 500, $lighter: 100, $darker: 700.
-$openslides-primary: mat.define-palette($openslides-blue);
-$openslides-accent: mat.define-palette(mat.$light-blue-palette);
-$openslides-warn: mat.define-palette(mat.$red-palette);
+$openslides-primary: mat.define-palette($wr-universums-schwarz);
+$openslides-accent: mat.define-palette($wr-erden-blau);
+$openslides-warn: mat.define-palette($wr-mars-rot);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $openslides-default-light: mat.define-light-theme($openslides-primary, $openslides-accent, $openslides-warn);
