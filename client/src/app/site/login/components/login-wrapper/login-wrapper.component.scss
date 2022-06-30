@@ -24,11 +24,129 @@ body {
                 margin-top: 10px;
                 margin-left: auto;
                 margin-right: auto;
-
                 img {
                     height: calc(100% - 40px);
                     width: 100%;
                     margin-top: 20px;
+                }
+                .logo-animated-container {
+                    height: calc(100% - 40px);
+                    width: 100%;
+                    margin-top: 20px;
+                    .logo-animated {
+                        position: relative;
+                        height: 100%;
+                        width: 150px;
+                        background-color: white;
+                        margin: auto;
+                        border-radius: 100%;
+                        img {
+                            position: absolute;
+
+                        }
+                        .innerCircle {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            bottom: 10px;
+                            left: 10px;
+                            border: solid 10px #1C2544;
+                            border-radius: 100%;
+                        }
+                        .orbit {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            bottom: 10px;
+                            left: 10px;
+                            .trabant-1 {
+                                width: 35px;
+                                height: 35px;
+                                background-color: #71B4DE;
+                                border-radius: 100%;
+                                border: solid 5px #1C2544;
+                            }
+                            .trabant-2 {
+                                width: 30px;
+                                height: 30px;
+                                background-color: #EB5A62;
+                                border-radius: 100%;
+                                border: solid 5px #1C2544;
+                            }
+                            .trabant-3 {
+                                width: 20px;
+                                height: 20px;
+                                background-color: #FED330;
+                                border-radius: 100%;
+                                border: solid 5px #1C2544;
+                            }
+                            
+                            &.animation1 {
+                                animation-name: circuit1;
+                                animation-duration: 40s;
+                                animation-iteration-count: infinite;
+                                animation-timing-function: ease-in-out;
+                            }
+                            &.animation2 {
+                                animation-name: circuit2;
+                                animation-duration: 30s;
+                                animation-iteration-count: infinite;
+                                animation-timing-function: ease-in-out;
+                            }
+                            &.animation3 {
+                                animation-name: circuit3;
+                                animation-duration: 20s;
+                                animation-iteration-count: infinite;
+                                animation-timing-function: ease-in-out;
+                            }
+                            @keyframes circuit1 {
+                                0% {
+                                    transform: rotate(200deg);
+                                }
+                                50% {
+                                    transform: rotate(560deg);
+                                }
+                                100% {
+                                    transform: rotate(200deg);
+                                }
+                            }
+                            @keyframes circuit2 {
+                                0% {
+                                    transform: rotate(80deg);
+                                }
+                                50% {
+                                    transform: rotate(440deg);
+                                }
+                                100% {
+                                    transform: rotate(80deg);
+                                }
+                            }
+                            @keyframes circuit3 {
+                                0% {
+                                    transform: rotate(0deg);
+                                }
+                                50% {
+                                    transform: rotate(360deg);
+                                }
+                                100% {
+                                    transform: rotate(0deg);
+                                }
+                            }
+                        }
+                        .bandage {
+                            position: absolute;
+                            background-color: #1C2544;
+                            height: 40px;
+                            top: 50%;
+                            left: -20px;
+                            right: -20px;
+                            transform: translateY(-50%);
+                            background-image: url("/assets/img/wr-text.svg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center 54%;
+                        }
+                    }
                 }
             }
         }
