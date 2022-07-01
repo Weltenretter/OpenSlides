@@ -22,7 +22,7 @@ export abstract class BaseComponent {
      *
      * Might be a config variable later at some point
      */
-    private titleSuffix = ' - OpenSlides';
+    private titleSuffix = ' - Ratquadrat';
 
     /**
      * Holds the coordinates where a swipe gesture was used

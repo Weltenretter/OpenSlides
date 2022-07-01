@@ -90,6 +90,17 @@
                     <small><os-copyright-sign></os-copyright-sign>&nbsp;Copyright by OpenSlides</small>
                 </span>
             </a>
+            <a
+                [@navItemAnim]
+                mat-list-item
+                href="https://weltenretter.eu"
+                target="_blank"
+                (click)="mobileAutoCloseNav()"
+            >
+                <span>
+                    <small>&hearts; Erweitert von Weltenretter</small>
+                </span>
+            </a>
             <div class="os-footer-logo-container">
                 <os-logo [footer]="true"></os-logo>
             </div>
